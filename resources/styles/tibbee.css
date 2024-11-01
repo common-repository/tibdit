@@ -1,0 +1,418 @@
+/*version 13*/
+
+.bd.widget
+{
+  /*border-top: solid;
+  border-bottom: solid;*/
+  border:none;
+  border-top: none;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: initial;
+  position: relative;
+  z-index: 1;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes tipdelay {
+  0%   {opacity:0;}
+  100% {opacity:0.8;}
+}
+
+/* Standard syntax */
+@keyframes tipdelay {
+  0%   {opacity:0;}
+  100% {opacity:0.8;}
+}
+
+
+
+div.bd.widget > p.wp_widget_plugin_textarea {
+  word-wrap: break-word;
+  font-size:80%;
+}
+
+.bd-tib-btn{
+  margin: 0;
+}
+
+button.bd-tib-btn{
+  background: transparent;
+  background-color: transparent;
+}
+
+/* Overrides to ensure no background is added to the button from the theme */
+button.bd-tib-btn:hover{
+  background: transparent;
+  background-color: transparent;
+}
+
+div.bd.button
+{
+
+    position: relative;
+    text-align: center;
+    width: auto;
+    z-index: 2;
+    background: none;
+    padding: 0;
+    display: block;
+  }
+
+
+div.bd.button.live:hover
+{
+  cursor: auto;
+}
+
+div.bd.button.live{
+  margin-right: 0;
+}
+
+div.bd.button g.tib{
+  left: 0;
+}
+
+
+div.bd.button div.tip p.dict
+{
+  margin:0.2em 0;
+  padding:0;
+  font-size: inherit;
+}
+
+a.bd-link {
+  cursor: pointer;
+}
+
+a.bd-link:hover::after {
+  position: absolute;
+  top: -2em;
+  background-color: rgba(100,100,100,0.8);
+  display: block;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: white;
+}
+
+
+input[type='text'].bd
+{
+  vertical-align: middle;
+  width: auto;
+  display: inline;
+}
+
+input[type='radio']#ASN-radio, input[type='radio']#PAD-radio
+{
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+.bd-radio-label{
+  margin-right: 40px;
+}
+
+.bd input[type=submit], .advanced-button-container
+{
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.bd input[type=submit] ~ input[type=submit]
+{
+  margin: 1em 1em;
+}
+
+.bd input[type=submit][disabled], .bd input[type=submit]:disabled
+{
+  opacity: 0.2;
+}
+
+/* Containing tables on Settings page */
+.form-table.bd{
+  padding: 20px;
+}
+
+.form-table.bd td, .form-table.bd th{
+  padding: 20px;
+}
+
+
+.form-table.bd th{
+  width: 250px;
+  border-right: none;
+}
+
+.form-table.bd td{
+  border-left: none;
+}
+
+.wrap h3, .wrap p{
+  padding-left: 20px;
+}
+
+/* Status indicator (tick/cross) when entering Bitcoin address */
+span.bd.status
+{
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 160%;
+}
+
+a.bd-admin-link:hover
+{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#BTH-display{
+
+  background: #ffffff;
+  display: inline-block;
+  width: auto;
+
+  padding: 6px;
+  margin-bottom: 0;
+  border: 1px solid #aaaaaa;
+  border-bottom: 0;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.scale-container{
+  margin: 0px 0px;
+}
+
+.scale-container .scale-input-container{
+  margin-right: 40px;
+}
+
+.scale-container .scale-input-container.custom label{
+  margin-right: 10px;
+}
+
+.scale-container .scale-input-container.custom input[readonly]{
+  cursor: pointer;
+}
+
+.scale-container #slider{
+
+  margin-right: auto;
+  margin-left: auto;
+  height: 30px;
+
+}
+
+.scale-container #slider .ui-slider-handle{
+  height: 35px;
+}
+
+.wp-color-result, .wp-picker-holder{
+
+}
+
+.settings_page_tibdit_options hr{
+  margin: 20px 0px;
+
+  margin-right: auto;
+}
+
+.outerwrapper-colour-picker{
+  clear:both;
+
+}
+
+.simple.colour-picker-container .palette-simple{
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border-radius: 2px;
+  vertical-align: bottom;
+  margin-left: 15px;
+}
+
+.simple.colour-picker-container label{
+  display: inline-block;
+}
+
+.simple.colour-picker-container input{
+  margin: 0;
+}
+
+textarea#caption{
+
+  width: 600px;
+  max-width: 600px;
+
+  height: 120px;
+  max-height: 120px;
+  padding: 20px;
+}
+
+.append-disabled .post-footer-styling .bd-btn-backdrop{
+  /* OVerriding inline styles from color picker when disabled */
+  fill: #999 !important;
+
+}
+
+.append-before-container, .append-after-container{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.append-only-on-single-container{
+  margin-bottom: 0px;
+}
+
+div.preview-container{
+
+}
+
+.preview-container .bd-flex{
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+
+  max-width: 600px;
+  height: 120px;
+  max-height: 120px;
+}
+
+/* Remove hover effect */
+.append-disabled .preview-container .bd-btn-cover{
+  display: none;
+}
+
+.settings_page_tibdit_options .advanced-false .hide, .settings_page_tibdit_options .advanced-true .show{
+  display: none;
+}
+.settings_page_tibdit_options .button-container li button{
+  margin-left: 15px;
+}
+.settings_page_tibdit_options .button-container input[type=radio]{
+  margin: 0;
+}
+
+
+.settings_page_tibdit_options .button-container li svg{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: auto;
+
+}
+
+.settings_page_tibdit_options .button-container li{
+  vertical-align: middle;
+  margin-top: 0px;
+  display: inline-block;
+  height: 61px;
+  position: relative;
+  width: auto;
+
+  text-align: center;
+  margin-right: 30px;
+}
+
+.settings_page_tibdit_options .button-container li:before {
+  content: '';
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+
+  width: 2px;
+}
+
+form.bd h2{
+  display: inline-block;
+}
+
+.button-container label{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.settings_page_tibdit_options .button-container label .label-background-div{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+
+
+}
+
+.settings_page_tibdit_options .button-container label:hover .label-background-div{
+
+}
+.settings_page_tibdit_options .button-container label:hover{
+
+}
+
+.settings_page_tibdit_options .button-container input:checked + label .label-background-div{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.settings_page_tibdit_options .button-container input{
+
+}
+
+.form-table th .use-asn-tip{
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-right: 20%;
+}
+
+.bd-flex {
+  margin: 1em -10px 2em; /* top between bottom */
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;	/* vertical alignment */
+}
+
+.bd-flex-item {
+  display:inline-block;
+  margin: 0 10px; /* same value as .bd-flex margin on line 3, without the minus sign */
+}
+
+.bd-flex-item.bd-side-text {
+  line-height: 130%; /* spacing between lines of text.  tweak as necessary */
+  flex:1 0.2 10em;
+}
+
+body div.wrap.hide-advanced .advanced{
+  display: none;
+}
+
+/* override-show-advanced-in-simple class will show advanced elements even in simple view */
+body div.wrap.hide-advanced .advanced.override-show-advanced-in-simple{
+  display: initial;
+}
+
+body div.wrap.hide-advanced tr.advanced.override-show-advanced-in-simple{
+  display: table-row;
+}
+
+
+/* override-hide-simple-in-simple will hide simple elements even in simple view */
+body div.wrap.hide-advanced .simple.override-hide-simple-in-simple{
+  display: none;
+}
+
+body div.wrap.show-advanced .simple{
+  display: none;
+}
